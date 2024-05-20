@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Project</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+        html {
+            font-family: "Poetsen One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .co {
+            background-color: rgba(46, 42, 42, 0.289);
+        }
+
+        .m {
+            background-color: rgba(46, 42, 42, 0.289);
+            padding: 26px 20px;
+
+        }
+        .col{
+            background-color: rgba(46, 42, 42, 0.289);
+
+        }
+        .c {
+            padding: 26px 20px;
+        }
+
+        .con {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            height: 12vh;
+            width: 100%;
+            border-radius: 2px;
+            background-color: whitesmoke;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .c1 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            background-color: whitesmoke;
+            padding: 20px 58px;
+        }
+
+        .m1 {
+            background-color: whitesmoke;
+            padding: 21px 31px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .slider {
+            width: 500px;
+            height: 300px;
+            background-color: yellow;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .image-container {
+            width: 1500px;
+            background-color: rgb(33, 12, 186);
+            height: 300px;
+            clear: both;
+            position: relative;
+            -webkit-transition: left 2s;
+            -moz-transition: left 2s;
+            -o-transition: left 2s;
+            transition: left 2s;
+        }
+
+        .slide {
+            float: left;
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        #slide-1:target~.image-container {
+            left: 0px;
+        }
+
+        #slide-2:target~.image-container {
+            left: -500px;
+        }
+
+        #slide-3:target~.image-container {
+            left: -1000px;
+        }
+
+        .buttons {
+            position: relative;
+            top: -20px;
+        }
+
+        .buttons a {
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            border-radius: 50px;
+            background-color: lightgreen;
+        }
+
+        .con3 {
+            display: inline;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .con3-box1 {
+            width: 250px;
+            height: 250px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+        }
+        figcaption{
+            display: flex;
+            justify-content: center;
+        }
+        .con3-box2 {
+            width: 250px;
+            height: 250px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .con3-box3 {
+            width: 250px;
+            height: 250px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .con3-box4 {
+            width: 250px;
+            height: 250px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .con3-box5 {
+            width: 250px;
+            height: 250px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .con4 {
+            display: inline;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .con4-box1 {
+            width: 250px;
+            height: 200px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .con4-box2 {
+            width: 250px;
+            height: 200px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .con4-box3 {
+            width: 250px;
+            height: 200px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .con4-box4 {
+            width: 250px;
+            height: 200px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+        }
+
+        .con4-box5 {
+            width: 250px;
+            height: 200px;
+            border: 3px solid black;
+            display: flex;
+            justify-content: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="co">
+        <header>
+            <div class="c">
+                <div class="con">
+                    <div class="box1">
+                        <a href="https://www.flipkart.com/">
+                            <img src="flipkartlogo.png" alt="flipkart" width="24px">
+                        </a>
+                    </div>
+                    <div class="box2">
+                        <label for="se"></label>
+                        <input type="search" id="se" placeholder="Search for Products, Brands and More" height="10px">
+                    </div>
+                    <div class="box3">
+                        <label for="se">login</label>
+                    
+                        <select name="opt" id="opt">
+                            <option value="new">new</option>
+                            <option value="profile">profile</option>
+                            <option value="plus zone">plus zone</option>
+                        </select>
+                        
+                        
+                    </div>
+                    <div class="box4">
+                        <a href="#">Cart</a>
+                    </div>
+                    <div class="box5">
+                        <a a href="#">Become a Seller</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="c1">
+                <div class="con1">
+                    <a href="#">
+                        <figure>
+                            <img src="groceries.png" alt="groceries" height="60px">
+                            <figcaption>Groceries</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="con1">
+                    <a href="#">
+                        <figure>
+                            <img src="mobile.png" alt="mobile" height="60px">
+                            <figcaption>Mobiles</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="con1">
+                    <a href="#">
+                        <figure>
+                            <img src="fashion.png" alt="fashion" height="60px">
+                            <figcaption>fashion</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="con1">
+                    <a href="#">
+                        <figure>
+                            <img src="electronics.png" alt="electronics" height="60px">
+                            <figcaption>electronics</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="con1">
+                    <a href="#">
+                        <figure>
+                            <img src="furniture.png" alt="furniture" height="60px">
+                            <figcaption>furniture</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="con1">
+                    <a href="#">
+                        <figure>
+                            <img src="appliance.png" alt="appliance" height="60px">
+                            <figcaption>appliance</figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="con1">
+                    <a href="#">
+                        <figure>
+                            <img src="travel.png" alt="travel" height="60px">
+                            <figcaption>travel </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="con1">
+                    <a href="#">
+                        <figure>
+                            <img src="2 Wheelers.png" alt="2 Wheelers" height="60px">
+                            <figcaption>2 Wheelers</figcaption>
+                        </figure>
+                    </a>
+                </div>
+        </section>
+    </div>
+    <section1>
+        <div class="slider">
+            <span id="slide-1"></span>
+            <span id="slide-2"></span>
+            <span id="slide-3"></span>
+            <div class="image-container">
+                <img src="groceries.png" class="slide" width="500" height="300" />
+                <img src="mobile.png" class="slide" width="500" height="300" />
+                <img src="appliance.png" class="slide" width="500" height="300" />
+            </div>
+            <div class="buttons">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+            </div>
+        </div>
+    </section1>
+    <div class="m">
+        <div class="m1">
+
+            <div class="mo">
+                <h1>best electronics</h1>
+            </div>
+            <br>
+            <div class="con3">
+                <div class="con3-box1">
+                    <figure>
+                    <a href="#">
+                        <img src="groceries.png" alt="hi" height="200px" width="250px"><figcaption> Groceries starting from $1* </figcaption>
+                    </a>
+                    </figure>
+                </div>
+                <div class="con3-box2">
+                    <figure>
+                    <a href="#">
+                        <img src="mobile.png" alt="hi" height="200px" width="250px"><figcaption>Mobiles starting from $99*</figcaption></a>
+                    </figure>
+                </div>
+                <div class="con3-box3">
+                    <figure>
+                    <a href="#">
+                        <img src="electronics.png" alt="hi" height="200px" width="250px"><figcaption>electronics starting from $9*</figcaption></a>
+                    </figure>
+                </div>
+                <div class="con3-box4">
+                    <figure>
+                    <a href="#">
+                        <img src="appliance.png" alt="hi" height="200px" width="250px"><figcaption>appliance starting from $9*</figcaption></a>
+                    </figure>
+                </div>
+
+                <div class="con3-box5">
+                    <figure>
+                    <a href="#">
+                        <img src="travel.png" alt="hi" height="200px" width="250px"><figcaption>travel starting from $9*</figcaption></a></figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m">
+        <div class="m1">
+
+            <div class="mo">
+                <h1>best Mobiles</h1>
+            </div>
+            <div class="con4">
+
+                <div class="con3-box2">
+                    <a href="#">
+                        <img src="mobile.png" alt="hi" height="200px" width="250px"></a>
+                </div>
+                <div class="con3-box3">
+                    <a href="#">
+                        <img src="electronics.png" alt="hi" height="200px" width="250px"></a>
+                </div>
+                <div class="con3-box5">
+                    <a href="#">
+                        <img src="travel.png" alt="hi" height="200px" width="250px"></a>
+                </div>
+                <div class="con3-box1">
+                    <a href="#">
+                        <img src="groceries.png" alt="hi" height="200px" width="250px"></a>
+                </div>
+                <div class="con3-box4">
+                    <a href="#">
+                        <img src="appliance.png" alt="hi" height="200px" width="250px"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+        <h1 class="col">Top Stories:Brand Directories
+            <pre>
+            </pre>
+        </h1>
+        <div class="col">
+        <div class="con5">
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+        </div>
+        </div>
+        <h1 class="col" >        <pre>
+        </pre>
+            best laptops
+            <pre>
+            </pre></h1>
+        <div class="col">
+        <div class="con6">
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+        </div>
+        </div>
+        <h1 class="col"> <pre>
+        </pre>TVs <pre>
+        </pre></h1>
+        <pre></pre>
+        <div class="col">
+        <div class="con7">
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+            <a href="#">Iphone1 | </a>
+            <a href="#">Iphone2 | </a>
+            <a href="#">Iphone3 | </a>
+            <a href="#">Iphone4 | </a>
+            <a href="#">Iphone5 | </a>
+            <a href="#">Iphone6 | </a>
+            <a href="#">Iphone7 | </a>
+            <a href="#">Iphone8 | </a>
+            <a href="#">Iphone9 | </a>
+            <a href="#">Iphone10 | </a>
+            <a href="#">Iphone12 | </a>
+            <a href="#">Iphone13 | </a>
+            <a href="#">Iphone14 | </a>
+            <a href="#">Iphone15 | </a>
+            <a href="#">Iphone16 | </a>
+        </div>
+        </div>
+        <p class="col">
+            &copy;All Rights Reserved&trade; </p>
+    </div>
+
+</body>
+
+</html>
